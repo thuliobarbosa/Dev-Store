@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/cadastro-produto.css">
+    <title>Teste</title>
+</head>
+<body>
+    <header id="header">
+        <section class="container">
+            <div class="box-header">
+                <div id="logo">Dev Store</div>
+                <nav id="menu">
+                    <a href="inicio.html">Início</a>
+                    <a href="loja-virtual.html">Loja Virtual</a>
+                    <a href="sobre-nos.html">Sobre nós</a>
+                    <a href="contato.html">Contato</a>
+                    <a href="minha-conta.html">Minha Conta</a>
+                    <a href="#">Carrinho</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main id="main">
+        <section class="container">
+            <form id="form-cadastro-produto">
+                <div id="titulo">Cadastro de produto</div>
+                <div>
+                    <label for="image" class="label">Imagem:</label>
+                    <input type="file" id="image" class="input-file">
+                </div>
+                <div>
+                    <label for="descricao" class="label">Descrição:</label>
+                    <input type="text" id="descricao" class="input">
+                </div>
+                <div>
+                    <label for="informacao" class="label">Informações adicionais:</label>
+                    <textarea id="informacao" cols="100" rows="5" class="textarea"></textarea>
+                </div>
+                <div>
+                    <label for="categoria" class="label">Categoria:</label>
+                    <select id="categoria" class="select">
+                        <option>Selecione uma opção</option>
+                        <option value="camiseta">Camiseta</option>
+                        <option value="caneca">Caneca</option>
+                        <option value="garrafa">Garrafa</option>
+                        <option value="adesivo">Adesivo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="estoque" class="label">Estoque:</label>
+                    <input type="text" id="estoque" class="input">
+                </div>
+                <div>
+                    <label for="valor" class="label">Valor:</label>
+                    <input type="text" id="valor" class="input">
+                </div>
+                <div class="box-button">
+                    <button id="cadastrar" class="button">Cadastrar</button>
+                </div>
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <section class="container">
+            <div class="box-footer">
+                <div id="sobre">
+                    <h2>Dev Store</h2>
+                    <p>Uma loja voltada para desenvolvedores, <br> com uma grande diversidade de produtos.</p>
+                </div>
+                <div id="infos">
+                    <h2>Informações</h2>
+                    <a href="#">Termos e Condições</a><br>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+                <div id="loja">
+                    <h2>Loja</h2>
+                    <a href="#">Sobre nós</a> <br>
+                    <a href="#">Contato</a>
+                </div>
+                <div id="contato">
+                    <p>E-mail: devstore@devstore.com.br</p>
+                    <p>Telefone: 99 99999-9999</p>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div id="dev">Desenvolvido por Thulio Barbosa</div>
+        </section>
+    </footer>
+
+    <script src="../js/pages/cadastro-produto.js"></script>
+    <script src="../js/instance-classe/cadastro-produto.js"></script>
+
+</body>
+</html>

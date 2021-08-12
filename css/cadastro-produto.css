@@ -1,0 +1,68 @@
+#form-cadastro-produto{
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0 100px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#titulo {
+    font-size: 2em;
+    text-align: center;
+    color: #393939;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.label {
+    font-size: 20px;
+    color: #393939;
+}
+
+.input {
+    display: block;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #393939;
+}
+
+.input-file {
+    height: 30px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #393939;
+}
+
+.textarea {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #393939;
+}
+
+.select {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 15px;
+    height: 40px;
+    color: #393939;
+}
+
+.button {
+    padding: 15px;
+    border: none;
+    background-color: #393939;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    text-transform: uppercase;  
+    margin: 10px 0 60px 0;  
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #585151
+}

@@ -1,0 +1,1 @@
+let pageInicio = new inicio();

@@ -1,0 +1,94 @@
+.titulo {
+    margin: 70px 0;
+    text-align: center;
+    font-size: 25px;
+    color: #393939;
+}
+
+.catalago {
+    display: flex;
+}
+
+.item-categoria {
+    text-decoration: none;
+    display: block;
+    margin-right: 120px;
+    width: 100%;
+    padding-bottom: 18px;
+    color: #666;
+}
+
+.item-categoria:hover {
+    color: #393939;
+}
+
+.produtos-mais-vendidos {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.block {
+    width: calc(100%/4 - 20px);
+    margin: 9px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.block-img {
+    height: calc(((100vw - (100vw - 1440px))/3 - 20px) /2);
+}
+
+.block-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.block-desc {
+    padding: 15px;
+    flex-grow: 1;
+    text-align: center;
+    color: #393939;
+}
+
+.block-valor {
+    padding: 15px;
+    text-align: center;
+    color: #393939;
+}
+
+.block-link {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #393939;
+}
+
+.block-link a {
+    color: #393939;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 0;
+    transition: 0.1s ease;
+    border-bottom: 1px solid #cecccc;
+    background-color: #393939;
+    color: #fff;
+}
+
+.block-link a:hover {
+    background-color: #585151;;
+    color: #fff;
+}

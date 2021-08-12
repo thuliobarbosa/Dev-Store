@@ -1,0 +1,56 @@
+.box-cadastro {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#titulo {
+    font-size: 2em;
+    color: #393939;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#obs {
+    font-size: 21px;
+    margin: 30px 0;
+    color: #393939;
+}
+
+#obs span {
+    color: red;
+    font-weight: bold;
+}
+
+.label { 
+    font-size: 20px;
+}
+
+.input {
+    height: 42px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    font-size: 22px;
+    padding: 5px;
+}
+
+.btn-position {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#avancar {
+    padding: 20px;
+    border: none;
+    background-color: #393939;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+#avancar:hover {
+    cursor: pointer;
+    background-color: #585151;
+}
+

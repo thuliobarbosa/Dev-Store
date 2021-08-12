@@ -1,0 +1,19 @@
+.box-contato {
+    display: flex;
+    margin: 80px 0px;
+    width: 100%;
+}
+
+.map {
+    width: 100%;
+    margin-left: 100px;
+}
+
+.infos {
+    font-size: 20px;
+    color: #393939;
+}
+
+.color-ccc {
+    color: rgba(158, 155, 155, 0.952);
+}
