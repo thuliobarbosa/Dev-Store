@@ -39,48 +39,48 @@ class cadastro_pruduto {
             (resp) => {
                 stringBase64 = resp.split(',', 2)[1];
                 console.log(stringBase64)
+                let prod = {
+                    id: idatual,
+                    image: stringBase64,
+                    descricao: document.getElementById("descricao").value,
+                    info: document.getElementById("informacao").value,
+                    grupo: document.getElementById("categoria").value,
+                    valor: document.getElementById("valor").value,
+                    estoque: document.getElementById("estoque").value
+                }
+
+                console.log(prod);
+        
+                let json = JSON.stringify(prod);
+                let url;
+                let metodo;
+                let myHeaders = new Headers();
+                myHeaders.append("Accept", "application/json");
+                myHeaders.append("Content-Type", "application/json");
+        
+                if (this.idatual == 0) {
+                    url = "http://127.0.0.1:3000/produto";
+                    metodo = "POST";
+                }
+                else {
+                    url = "http://127.0.0.1:3000/produto/" + this.idatual;
+                    metodo = "PUT";
+                }
+        
+                fetch(url, { method: metodo, body: json, edirect: 'follow', headers: myHeaders })
+                .then(result => {
+                    if (result.status == 201) {
+                        console.log("Produto cadastrado com sucesso!");
+                    }
+                    else {
+                        console.log("Falha ao inserir dados!");
+                    }
+                });
             },
-            (erro) => {
+            (erro) => {n
                 console.log(erro);
             }
         );
-
-        let prod = {
-            id: idatual,
-            image: document.getElementById("image").value,
-            descricao: document.getElementById("descricao").value,
-            info: document.getElementById("informacao").value,
-            grupo: document.getElementById("categoria").value,
-            valor: document.getElementById("valor").value,
-            estoque: document.getElementById("estoque").value
-        }
-
-        let json = JSON.stringify(prod);
-        let url;
-        let metodo;
-        let myHeaders = new Headers();
-        myHeaders.append("Accept", "application/json");
-        myHeaders.append("Content-Type", "application/json");
-
-        if (this.idatual == 0) {
-            url = "http://127.0.0.1:3000/produto";
-            metodo = "POST";
-        }
-        else {
-            url = "http://127.0.0.1:3000/produto/" + this.idatual;
-            metodo = "PUT";
-        }
-
-        fetch(url, { method: metodo, body: json, edirect: 'follow', headers: myHeaders })
-        .then(result => {
-            if (result.status == 201) {
-                console.log("Produto cadastrado com sucesso!");
-            }
-            else {
-                console.log("Falha ao inserir dados!");
-            }
-        });
-
     }
 
     alterar() {

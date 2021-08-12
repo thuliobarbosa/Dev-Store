@@ -10,5 +10,5 @@ app.use(express.urlencoded( { extended: true } ) );
 require( '../index' )( app );
 
 app.listen(3000, () => {
-    console.log("Servidor na porta 3000");
+    console.log("Porta 3000 ativa");
 });
