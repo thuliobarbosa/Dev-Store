@@ -14,6 +14,7 @@ class inicio {
         .then(response => response.json())
         .then(data => {
             for (const item of data) {
+                console.log(item.image);
                 var wrapper = document.querySelector(".wrapper");
                 wrapper.innerHTML += `
                     <div class="block">

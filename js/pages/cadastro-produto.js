@@ -37,8 +37,8 @@ class cadastro_pruduto {
 
         this.to_base64(elImage).then(
             (resp) => {
-                stringBase64 = resp.split(',', 2)[1];
-                console.log(stringBase64)
+                //stringBase64 = resp.split(',', 2)[1];
+                stringBase64 = resp;
                 let prod = {
                     id: idatual,
                     image: stringBase64,
